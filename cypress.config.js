@@ -2,13 +2,15 @@ const { defineConfig } = require("cypress");
 const cucumber = require('cypress-cucumber-preprocessor').default;
 
 module.exports = defineConfig({
-  supportFile: false,
-  reporter: 'mochawesome',
-  reporterOptions:{
+  
+  e2e: {
+    supportFile: false,
+    video: true,
+    reporter: 'mochawesome',
+    reporterOptions:{
     charts: true,
     embeddedScreenshots:true
   },
-  e2e: {
     specPattern:'cypress/e2e/**/*.feature',
     projectId: "wkv5u3",
     setupNodeEvents(on, config) {
