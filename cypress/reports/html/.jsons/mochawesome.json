@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-03-07T08:16:48.579Z",
-    "end": "2024-03-07T08:17:00.285Z",
-    "duration": 11706,
+    "start": "2024-03-07T08:15:38.513Z",
+    "end": "2024-03-07T08:15:49.498Z",
+    "duration": 10985,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e69cfd92-8b6d-46d1-a8c3-fde6d9f0d147",
+      "uuid": "6cafd8df-fefe-4039-84d7-92d51e703074",
       "title": "",
       "fullFile": "cypress\\e2e\\login.feature",
       "file": "cypress\\e2e\\login.feature",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f1a101bf-e09e-4d5e-b5ca-3baaf068c06a",
+          "uuid": "621d3bdd-a7e9-4c0f-9ccb-26626fc9c8f3",
           "title": "mytek search",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Home Page",
               "fullTitle": "mytek search Home Page",
               "timedOut": null,
-              "duration": 6658,
+              "duration": 5929,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
               "err": {},
-              "uuid": "6600abee-69ed-4e2b-a7eb-4252488ff222",
-              "parentUUID": "f1a101bf-e09e-4d5e-b5ca-3baaf068c06a",
+              "uuid": "fa347ef0-ad44-4be2-a743-95cb4ed33851",
+              "parentUUID": "621d3bdd-a7e9-4c0f-9ccb-26626fc9c8f3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "6600abee-69ed-4e2b-a7eb-4252488ff222"
+            "fa347ef0-ad44-4be2-a743-95cb4ed33851"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6658,
+          "duration": 5929,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -84,7 +84,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": true,
+        "saveHtml": false,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -95,7 +95,11 @@
     "marge": {
       "options": {
         "charts": true,
-        "embeddedScreenshots": true
+        "embeddedScreenshots": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
       },
       "version": "6.2.0"
     }
