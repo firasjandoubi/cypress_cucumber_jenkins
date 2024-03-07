@@ -29,7 +29,7 @@ pipeline {
 
     post{
         always{
-           publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'E:\\stage talan\\point deux\\cypress_cucumber_mytek_test\\cypress_cucumber_jenkins\\cypress\\reports\\index.html', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
+           publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'E:\\stage talan\\point deux\\cypress_cucumber_mytek_test\\cypress_cucumber_jenkins\\cypress\\reports\\html', reportFiles: 'index.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
         }
     }
         
