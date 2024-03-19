@@ -33,6 +33,7 @@ pipeline {
     post{
         always{
             publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'E:\\stage talan\\point deux\\cypress_cucumber_jenkins\\mochawesome-report', reportFiles: 'mochawesome.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
+            emailext body: '', recipientProviders: [buildUser()], subject: '', to: 'firasjandoubi003@gmail.com'
         }
     }
         
